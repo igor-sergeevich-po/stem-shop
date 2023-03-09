@@ -6,36 +6,36 @@
   .logo {
     width: 80px;
   }
-}
 
-.info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-grow: 1;
-}
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
 
-.user {
-  display: flex;
-  align-items: center;
-  column-gap: 10px;
-  cursor: pointer;
-}
+    .user {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      cursor: pointer;
 
-.avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--dark);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+      .avatar {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: var(--dark);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
 
-.username {
-  font-size: 10px;
-  line-height: 12px;
-  color: var(--grey);
+      .username {
+        font-size: 10px;
+        line-height: 12px;
+        color: var(--grey);
+      }
+    }
+  }
 }
 
 .form {
@@ -48,31 +48,31 @@
   column-gap: 16px;
   width: 300px;
   position: relative;
-}
 
-.icon {
-  width: 13px;
-  height: 13px;
-}
+  .icon {
+    width: 13px;
+    height: 13px;
 
-.icon svg {
-  width: 100%;
-  height: 100%;
-  fill: var(--dark-sea);
-}
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: var(--dark-sea);
+    }
+  }
 
-.input {
-  flex-grow: 1;
-}
+  .input {
+    flex-grow: 1;
 
-.input input {
-  font-family: Montserrat, Roboto, sans-serif;
-  font-size: 12px;
-  line-height: 14px;
-  color: var(--grey);
-  background: none;
-  outline: none;
-  width: 100%;
+    input {
+      font-family: Montserrat, Roboto, sans-serif;
+      font-size: 12px;
+      line-height: 14px;
+      color: var(--grey);
+      background: none;
+      outline: none;
+      width: 100%;
+    }
+  }
 }
 
 .account {
@@ -157,7 +157,6 @@
 .item:hover {
   color: var(--light);
 }
-
 .image {
   background-position: center;
   background-repeat: no-repeat;

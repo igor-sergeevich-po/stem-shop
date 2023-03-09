@@ -13,11 +13,13 @@ export const Header = () => {
           <img src={logo} alt="logotype stem" />
         </Link>
       </div>
+
       <div className={styles.info}>
         <div className={styles.user}>
           <img src={avatar} className={styles.avatar} alt="avatar" />
           <div className={styles.username}>guest</div>
         </div>
+
         <form className={styles.form}>
           <div className={styles.icon}>
             <svg className="icon">
