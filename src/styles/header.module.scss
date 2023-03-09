@@ -8,6 +8,7 @@
   }
 
   .info {
+    margin-left: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,52 +80,47 @@
   display: flex;
   align-items: center;
   column-gap: 20px;
+  svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .favourites {
   cursor: pointer;
-}
-
-.account svg {
-  width: 24px;
-  height: 24px;
-}
-
-.icon-fav {
-  stroke: var(--grey);
-  fill: none;
-  transition: 0.3s;
+  .icon-fav {
+    stroke: var(--grey);
+    fill: none;
+    transition: 0.3s;
+    &:hover {
+      stroke: var(--white);
+    }
+  }
 }
 
 .icon-cart {
   fill: var(--grey);
-}
-
-.icon-fav:hover {
-  stroke: var(--white);
-}
-
-.icon-cart:hover {
-  fill: var(--white);
+  &:hover {
+    fill: var(--white);
+  }
 }
 
 .cart {
   position: relative;
-}
-
-.count {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  background: var(--violet);
-  right: -2px;
-  bottom: -2px;
-  border-radius: 50%;
-  font-weight: 700;
-  font-size: 10px;
-  color: var(--light);
-  text-align: center;
-  line-height: 16px;
+  .count {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: var(--violet);
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--light);
+    text-align: center;
+    line-height: 16px;
+  }
 }
 
 .box {
@@ -154,10 +150,9 @@
   align-items: center;
   column-gap: 16px;
   transition: 0.3s;
-}
-
-.item:hover {
-  color: var(--light);
+  &:hover {
+    color: var(--light);
+  }
 }
 
 .image {
