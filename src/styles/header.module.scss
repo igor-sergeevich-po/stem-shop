@@ -93,6 +93,7 @@
 .icon-fav {
   stroke: var(--grey);
   fill: none;
+  transition: 0.3s;
 }
 
 .icon-cart {
@@ -152,11 +153,13 @@
   display: flex;
   align-items: center;
   column-gap: 16px;
+  transition: 0.3s;
 }
 
 .item:hover {
   color: var(--light);
 }
+
 .image {
   background-position: center;
   background-repeat: no-repeat;

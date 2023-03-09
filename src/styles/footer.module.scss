@@ -4,6 +4,7 @@
   justify-content: space-between;
   margin-top: 20px;
   padding: 24px;
+
   .logo {
     width: 25px;
     a {
@@ -17,6 +18,8 @@
     line-height: 15px;
     a {
       color: var(--violet);
+      transition: 0.3s;
+
       &:hover {
         color: var(--active-link);
       }
@@ -26,10 +29,12 @@
   .socials {
     display: flex;
     gap: 15px;
+
     svg {
       width: 24px;
       height: 24px;
       fill: var(--dark-sea);
+      transition: 0.3s;
 
       &:hover {
         fill: var(--violet);
