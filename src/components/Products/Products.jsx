@@ -5,13 +5,14 @@ import styles from "../../styles/products.module.scss";
 
 export const Products = ({ title, style = {}, products = [], amount }) => {
   const list = products.filter((_, i) => i < amount);
+  console.log(list);
 
   return (
     <section className={styles.products} style={style}>
       {title && <h2>{title}</h2>}
 
       <div className={styles.list}>
-        {list.map(({ id, images, title, category: { name: cat }, price }) => (
+        {list.map(({ id, images, title, category: { name: titleCategory }, price }) => (
           <Link className={styles.product} to={`/products/${id}`} key={id}>
             <div
               className={styles.image}
@@ -19,7 +20,7 @@ export const Products = ({ title, style = {}, products = [], amount }) => {
             />
             <div className={styles.wrapper}>
               <h3 className={styles.title}>{title}</h3>
-              <div className={styles.cat}>{cat}</div>
+              <div className={styles.cat}>{titleCategory}</div>
               <div className={styles.info}>
                 <div className={styles.prices}>
                   <div className={styles.price}>{price} Ру</div>
