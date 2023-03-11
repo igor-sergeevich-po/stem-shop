@@ -27,12 +27,6 @@ export const Sidebar = () => {
               </NavLink>
             </li>
           ))}
-          <li>
-            <NavLink to={`/categories/${2}`}>boots</NavLink>
-          </li>
-          <li>
-            <NavLink to={`/categories/${2}`}>nike</NavLink>
-          </li>
         </ul>
       </nav>
 
