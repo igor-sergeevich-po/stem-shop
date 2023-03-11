@@ -7,12 +7,12 @@ export const Products = ({ title, style = {}, products = [], amount }) => {
   const list = products.filter((_, i) => i < amount);
 
   return (
-    <section className={style.products} style={style}>
+    <section className={styles.products} style={style}>
       {title && <h2>{title}</h2>}
 
       <div className={styles.list}>
         {list.map(({ id, images, title, category: { name: cat }, price }) => (
-          <Link className="styles.product" to={`/products/${id}`} key={id}>
+          <Link className={styles.product} to={`/products/${id}`} key={id}>
             <div
               className={styles.image}
               style={{ backgroundImage: `url(${images[0]})` }}
@@ -26,6 +26,7 @@ export const Products = ({ title, style = {}, products = [], amount }) => {
                   <div className={styles.oldPrice}>{Math.floor(price * 0.8)} Ру</div>
                 </div>
               </div>
+
               <div className={styles.purchases}>
                 {Math.floor(Math.random() * 15 + 3)} purchased
               </div>
